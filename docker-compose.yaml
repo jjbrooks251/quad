@@ -13,8 +13,8 @@ services:
         published: 80
         protocol: tcp
       depends_on:
-        - client
-        - server
+      - client
+      - server
     server:
       image: docker.io/qamattjohunt/playground:latest
       build:
